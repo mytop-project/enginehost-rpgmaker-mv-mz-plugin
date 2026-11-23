@@ -2,10 +2,10 @@ plugins { id("com.android.library") }
 
 // Enginehost's web game host (GameWebView, GameServer, LocalStorageBridge), compiled into this core:
 // checked out with the plugin API into build/enginehost by the plugin-api action the workflow pins
-// (Droidtop/tracker#768: this core and the HTML core used to carry a copy each).
+// (mytop-project/tracker#768: this core and the HTML core used to carry a copy each).
 val enginehostWeb = rootProject.file("build/enginehost/plugin-web/src/main/java")
 check(enginehostWeb.isDirectory) {
-    "Enginehost's plugin-web is not checked out: clone Droidtop/enginehost into build/enginehost at the " +
+    "Enginehost's plugin-web is not checked out: clone mytop-project/enginehost into build/enginehost at the " +
         "commit .github/workflows/android.yml pins its plugin-api action to"
 }
 

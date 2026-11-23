@@ -1,7 +1,7 @@
 name: Re-sign a stable release
 
 # Re-signs published releases under this repository's current signing key and certificate
-# (Droidtop/tracker#550, #876). Without rekey: the October behaviour, a legacy-signed stable
+# (mytop-project/tracker#550, #876). Without rekey: the October behaviour, a legacy-signed stable
 # release gets a v1 signature and is published as <tag>-resigned. With rekey: each named
 # release (or "all") has its v1 signature replaced in place under the key issued by the new
 # Enginehost signing root after the 2026-11-04 rotation (owner: "Yes, replace each release");
@@ -30,7 +30,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch'
     permissions:
       contents: write
-    uses: Droidtop/enginehost/.github/workflows/resign-engine-release.yml@de84ece4c5de698a9bdcc8628a73934f5e02950f
+    uses: mytop-project/enginehost/.github/workflows/resign-engine-release.yml@de84ece4c5de698a9bdcc8628a73934f5e02950f
     with:
       tooling-sha: de84ece4c5de698a9bdcc8628a73934f5e02950f
       source-tag: ${{ inputs.source-tag }}

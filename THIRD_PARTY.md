@@ -10,7 +10,7 @@ by this repository.
 
 | Component | Version / commit | Licence | Source | Where in tree |
 |---|---|---|---|---|
-| Enginehost's own wrapper (WebView bridge, save shim, audio fallback) | this repository | GPL-3.0 | https://github.com/Droidtop/enginehost-rpgmaker-mv-mz-plugin | entire tree |
+| Enginehost's own wrapper (WebView bridge, save shim, audio fallback) | this repository | GPL-3.0 | https://github.com/mytop-project/enginehost-rpgmaker-mv-mz-plugin | entire tree |
 | RPG Maker MV/MZ runtime, pixi.js, localforage | supplied per-game at launch | not applicable (not vendored) | shipped inside each game's own `www` folder | never present in this repository |
 
 ## Obligations
